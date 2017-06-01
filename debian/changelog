@@ -1,3 +1,11 @@
+libtasn1-6 (4.7-3ubuntu0.16.04.2) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: buffer overflow via specially crafted assignments file
+    - debian/patches/CVE-2017-6891.patch: add checks to lib/parser_aux.c.
+    - CVE-2017-6891
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 01 Jun 2017 13:14:42 -0400
+
 libtasn1-6 (4.7-3ubuntu0.16.04.1) xenial-security; urgency=medium
 
   * SECURITY UPDATE: infinite loop via malformed DER cert
