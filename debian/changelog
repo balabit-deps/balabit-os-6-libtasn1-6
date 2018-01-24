@@ -1,3 +1,16 @@
+libtasn1-6 (4.7-3ubuntu0.16.04.3) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: NULL pointer dereference and DoS
+    - debian/patches/CVE-2017-10790.patch: safer access to values
+      read in /lib/parser_aux.c.
+    - CVE-2017-10790
+  * SECURITY UPDATE: Unlimited recurssion leading to DoS attack
+    - debian/patches/CVE-2018-6003.patch: restrics the levels of
+      recurssion to 3.
+    - CVE-2018-6003
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 24 Jan 2018 18:47:01 -0300
+
 libtasn1-6 (4.7-3ubuntu0.16.04.2) xenial-security; urgency=medium
 
   * SECURITY UPDATE: buffer overflow via specially crafted assignments file
